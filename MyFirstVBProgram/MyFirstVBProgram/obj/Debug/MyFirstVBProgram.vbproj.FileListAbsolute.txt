@@ -1,0 +1,12 @@
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\bin\Debug\MyFirstVBProgram.exe.config
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\bin\Debug\MyFirstVBProgram.exe
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\bin\Debug\MyFirstVBProgram.pdb
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\bin\Debug\MyFirstVBProgram.xml
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.vbproj.AssemblyReference.cache
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.Form1.resources
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.Resources.resources
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.vbproj.GenerateResource.cache
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.vbproj.CoreCompileInputs.cache
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.exe
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.xml
+C:\Users\EJ033T\source\repos\MyFirstVBProgram\MyFirstVBProgram\obj\Debug\MyFirstVBProgram.pdb
