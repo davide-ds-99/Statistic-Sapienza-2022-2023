@@ -1,0 +1,10 @@
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.csproj.AssemblyReference.cache
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.Form1.resources
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.Properties.Resources.resources
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.csproj.GenerateResource.cache
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\bin\Debug\Random_and_Timer_CSharp.exe.config
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\bin\Debug\Random_and_Timer_CSharp.exe
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\bin\Debug\Random_and_Timer_CSharp.pdb
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.exe
+C:\Users\EJ033T\Statistic-Sapienza-2022-2023\HW2\A2_Random_&_Timer\Random_and_Timer_CSharp\Random_and_Timer_CSharp\obj\Debug\Random_and_Timer_CSharp.pdb

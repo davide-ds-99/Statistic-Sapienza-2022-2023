@@ -1,0 +1,2 @@
+Applications
+1) make a simple program which uses the objects RANDOM and TIMER
