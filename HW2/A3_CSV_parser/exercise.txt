@@ -1,1 +1,8 @@
 2) Make a simple CSV parser
+
+Reference
+
+https://stackoverflow.com/questions/21726088/how-to-get-current-working-directory-path-c
+https://learn.microsoft.com/it-it/dotnet/api/system.windows.forms.datagridviewcolumn?view=windowsdesktop-6.0
+https://www.geeksforgeeks.org/c-sharp-padright-method/
+https://www.delftstack.com/howto/csharp/csharp-parse-csv/
