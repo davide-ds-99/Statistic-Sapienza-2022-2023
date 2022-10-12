@@ -9,7 +9,7 @@ Public Class Student
     Public Property HairColor As String
     Public Property EyeColor As String
     Public Property Age As String
-    Public Property ShoeSize As String
+    Public Property ShoesSize As String
     Public Property NumberSiblings As String
     Public Property NumberCars As String
     Public Property FavoriteHobby As String
