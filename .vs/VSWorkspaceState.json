@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HW2",
+    "\\HW2\\A4_Univariate_Distribution_from_CSV",
+    "\\HW2\\A4_Univariate_Distribution_from_CSV\\UnivariateDistribution"
   ],
+  "SelectedNode": "\\HW2\\A4_Univariate_Distribution_from_CSV\\UnivariateDistribution\\Form1.vb",
   "PreviewInSolutionExplorer": false
 }
