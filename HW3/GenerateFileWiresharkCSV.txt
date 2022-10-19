@@ -1,0 +1,4 @@
+# Generate the PCAP file
+$ tshark -i 5 testprova.pcap -c 50
+# Generate CSV file from PCAP file
+$ C:\Program Files\Wireshark>tshark -r testprova.pcap -T fields -e frame.number -e frame.time -e eth.src -e eth.dst -e ip.src -e ip.dst -e ip.proto -E header=y -E separator=, -E occurrence=f > WiresharkFile.csv
