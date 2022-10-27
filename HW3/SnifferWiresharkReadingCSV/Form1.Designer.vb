@@ -43,6 +43,8 @@ Partial Class Form1
         '
         'RichTextBoxCSV
         '
+        Me.RichTextBoxCSV.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.RichTextBoxCSV.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxCSV.Location = New System.Drawing.Point(25, 121)
         Me.RichTextBoxCSV.Name = "RichTextBoxCSV"
@@ -96,6 +98,9 @@ Partial Class Form1
         '
         'RTBDistribution
         '
+        Me.RTBDistribution.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RTBDistribution.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RTBDistribution.Location = New System.Drawing.Point(617, 121)
         Me.RTBDistribution.Name = "RTBDistribution"
