@@ -1,21 +1,12 @@
-﻿Public Class Form1
+﻿Imports System.Windows.Forms.DataVisualization.Charting
+
+Public Class Form1
     Dim random As New Random
     Dim n As Integer
     Dim p As Double
     Dim DataSet As New List(Of Integer)
-    Dim FrequencyDict As New Dictionary(Of Integer, Integer)
-    Dim ListaEstremi As New List(Of Integer)
-    Dim ListaValori As New List(Of Double)
-    Public b As Bitmap
-    Public g As Graphics
-    'WINDOW
-    Public MinX_Window As Double = -1
-    Public MaxX_Window As Double = 1
-    Public MinY_Window As Double = 0
-    Public MaxY_Window As Double = 1000
-    Public RangeX As Double = MaxX_Window - MinX_Window
-    Public RangeY As Double = MaxY_Window - MinY_Window
-    Public Viewport As New Rectangle(10, 10, 250, 250)
+    Dim AF As New Dictionary(Of Integer, Double)
+    Dim RF As New Dictionary(Of Integer, Double)
 
 
     Private Sub ButtonBinomial_Click(sender As Object, e As EventArgs) Handles ButtonBinomial.Click
@@ -46,7 +37,6 @@
     End Sub
     Private Sub ButtonFrquency_Click(sender As Object, e As EventArgs) Handles ButtonFrquency.Click
         DataGridViewFrequency.Rows.Clear()
-
         DataGridViewFrequency.ColumnCount = 6
 
         DataGridViewFrequency.Columns(0).Name = "absolute frequency"
@@ -56,25 +46,21 @@
         DataGridViewFrequency.Columns(4).Name = "normalized frequency"
         DataGridViewFrequency.Columns(5).Name = "value NF"
 
-        Dim DictAF As New Dictionary(Of Integer, Integer)
-        Dim DictRF As New Dictionary(Of Integer, Integer)
+        Dim DictAF As Dictionary(Of Integer, Integer) = AbosluteFrequency(Me.DataSet)
 
-        DictAF = AbosluteFrequency(Me.DataSet)
+        AF.Clear()
         For Each item As KeyValuePair(Of Integer, Integer) In DictAF
             DataGridViewFrequency.Rows.Add(item.Key, item.Value)
-            FrequencyDict.Add(item.Key, item.Value)
-            ListaEstremi.Add(item.Key + 1)
-            ListaValori.Add(item.Value)
+            AF.Add(item.Key, item.Value)
         Next
 
-        DictRF = RelativeFrequency(DictAF)
+        RF.Clear()
+        Dim DictRF As Dictionary(Of Integer, Integer) = RelativeFrequency(DictAF)
         Dim i As Integer
         For Each item As KeyValuePair(Of Integer, Integer) In DictRF
             DataGridViewFrequency.Rows(i).Cells(2).Value = item.Key
             DataGridViewFrequency.Rows(i).Cells(3).Value = item.Value & "%"
-            'FrequencyDict.Add(item.Key, item.Value)
-            ListaEstremi.Add(item.Key + 1)
-            ListaValori.Add(item.Value)
+            RF.Add(item.Key, item.Value)
             i += 1
         Next
         'DataGridViewFrequency.Rows.Add(item.Key, item.Value)
@@ -101,46 +87,37 @@
         Return Dict
     End Function
 
-    Sub InizializeGraphics()
-        Me.b = New Bitmap(Me.PictureBox1.Width, Me.PictureBox1.Height)
-        Me.g = Graphics.FromImage(b)
-        Me.g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
-        Me.g.TextRenderingHint = Drawing.Text.TextRenderingHint.AntiAlias
-    End Sub
-
     Private Sub ButtonHisto_Click(sender As Object, e As EventArgs) Handles ButtonHisto.Click
-        Me.InizializeGraphics()
-        DrawScene()
-    End Sub
-    Function X_Viewport(X_World As Double, Viewport As Rectangle, MinX As Double, RangeX As Double) As Integer
-        Return CInt(Viewport.Left + Viewport.Width * (X_World - MinX) / RangeX)
-    End Function
-    Function Y_Viewport(Y_World As Double, Viewport As Rectangle, MinY As Double, RangeY As Double) As Integer
-        Return CInt(Viewport.Top + Viewport.Height - Viewport.Height * (Y_World - MinY) / RangeY)
-    End Function
-    Sub DrawScene()
-
-        g.Clear(Color.White)
-        Me.g.DrawRectangle(Pens.Red, Viewport)
-
-        'For Each item As KeyValuePair(Of Integer, Integer) In FrequencyDict
-        For Each itemX In ListaEstremi
-            Dim X_Viewport As Integer = Me.X_Viewport(itemX, Viewport, MinX_Window, RangeX)
-            For Each itemY In ListaValori
-                Dim Y_Viewport As Integer = Me.Y_Viewport(itemY, Viewport, MinY_Window, RangeY)
-
-                g.FillEllipse(Brushes.Blue, New Rectangle(New Point(X_Viewport - 3, Y_Viewport - 3), New Size(6, 6)))
-                g.DrawString(itemX.ToString.PadLeft(5) & "," & itemY.ToString, Font, Brushes.Green, New Point(X_Viewport, Y_Viewport))
-                '''''
-                Dim rect As New Rectangle(X_Viewport, Y_Viewport, 15, itemY)
-                Dim clr As Color = Color.FromArgb(255, 245, 251, 122)
-                Dim the_brush As New SolidBrush(clr)
-                Dim the_pen As New Pen(Color.Black, 2)
-                g.FillRectangle(the_brush, rect)
-                g.DrawRectangle(the_pen, rect)
-            Next
+        'Me.InizializeGraphics()
+        'DrawScene()
+        'Use a Windows Package for generate chart
+        Chart1.Titles.Clear()
+        Chart1.Series.Clear()
+        Chart1.Titles.Add("Distribution of flip two faice coin")
+        'Create a new series and add data points to it.
+        Dim s As New Series
+        s.Name = "sum of distribution"
+        'Change to a line graph.
+        s.ChartType = SeriesChartType.Column
+        For Each element As KeyValuePair(Of Integer, Double) In AF
+            s.Points.AddXY(element.Key.ToString, element.Value)
         Next
-        Me.PictureBox1.Image = b
+        'Add the series to the Chart1 control.
+        Chart1.Series.Add(s)
+
+        Chart2.Titles.Clear()
+        Chart2.Series.Clear()
+        Chart2.Titles.Add("Distribution of flip two faice coin")
+        'Create a new series and add data points to it.
+        Dim f As New Series
+        f.Name = "sum of distribution"
+        'Change to a line graph.
+        f.ChartType = SeriesChartType.Column
+        For Each element As KeyValuePair(Of Integer, Double) In RF
+            f.Points.AddXY(element.Key.ToString, element.Value)
+        Next
+        'Add the series to the Chart1 control.
+        Chart2.Series.Add(f)
     End Sub
 
 End Class

@@ -22,16 +22,24 @@ Partial Class Form1
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.ButtonBinomial = New System.Windows.Forms.Button()
         Me.RTBVariable = New System.Windows.Forms.RichTextBox()
         Me.DataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewFrequency = New System.Windows.Forms.DataGridView()
         Me.ButtonFrquency = New System.Windows.Forms.Button()
         Me.ButtonHisto = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridViewFrequency, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonBinomial
@@ -45,7 +53,7 @@ Partial Class Form1
         '
         'RTBVariable
         '
-        Me.RTBVariable.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RTBVariable.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RTBVariable.Location = New System.Drawing.Point(158, 12)
         Me.RTBVariable.Name = "RTBVariable"
         Me.RTBVariable.Size = New System.Drawing.Size(249, 54)
@@ -59,7 +67,7 @@ Partial Class Form1
         Me.DataGridView.Name = "DataGridView"
         Me.DataGridView.RowHeadersWidth = 51
         Me.DataGridView.RowTemplate.Height = 24
-        Me.DataGridView.Size = New System.Drawing.Size(395, 353)
+        Me.DataGridView.Size = New System.Drawing.Size(395, 170)
         Me.DataGridView.TabIndex = 3
         '
         'DataGridViewFrequency
@@ -71,7 +79,7 @@ Partial Class Form1
         Me.DataGridViewFrequency.Name = "DataGridViewFrequency"
         Me.DataGridViewFrequency.RowHeadersWidth = 51
         Me.DataGridViewFrequency.RowTemplate.Height = 24
-        Me.DataGridViewFrequency.Size = New System.Drawing.Size(461, 170)
+        Me.DataGridViewFrequency.Size = New System.Drawing.Size(669, 170)
         Me.DataGridViewFrequency.TabIndex = 4
         '
         'ButtonFrquency
@@ -85,27 +93,52 @@ Partial Class Form1
         '
         'ButtonHisto
         '
-        Me.ButtonHisto.Location = New System.Drawing.Point(413, 248)
+        Me.ButtonHisto.Location = New System.Drawing.Point(12, 248)
         Me.ButtonHisto.Name = "ButtonHisto"
         Me.ButtonHisto.Size = New System.Drawing.Size(118, 54)
         Me.ButtonHisto.TabIndex = 6
         Me.ButtonHisto.Text = "HISTOGRAM"
         Me.ButtonHisto.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'Chart1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(413, 308)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(546, 363)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(12, 308)
+        Me.Chart1.Name = "Chart1"
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(519, 362)
+        Me.Chart1.TabIndex = 8
+        Me.Chart1.Text = "Chart1"
+        '
+        'Chart2
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend2)
+        Me.Chart2.Location = New System.Drawing.Point(546, 308)
+        Me.Chart2.Name = "Chart2"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.Chart2.Series.Add(Series2)
+        Me.Chart2.Size = New System.Drawing.Size(519, 362)
+        Me.Chart2.TabIndex = 9
+        Me.Chart2.Text = "Chart2"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(963, 728)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(1171, 728)
+        Me.Controls.Add(Me.Chart2)
+        Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.ButtonHisto)
         Me.Controls.Add(Me.ButtonFrquency)
         Me.Controls.Add(Me.DataGridViewFrequency)
@@ -116,7 +149,8 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridViewFrequency, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -127,5 +161,6 @@ Partial Class Form1
     Friend WithEvents DataGridViewFrequency As DataGridView
     Friend WithEvents ButtonFrquency As Button
     Friend WithEvents ButtonHisto As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents Chart2 As DataVisualization.Charting.Chart
 End Class
