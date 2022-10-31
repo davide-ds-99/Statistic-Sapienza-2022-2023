@@ -7,6 +7,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonHisto.Click
+        'Use a Windows Package for generate chart
         Chart1.Titles.Clear()
         Chart1.Series.Clear()
         Chart1.Titles.Add("Distribution of the sum of roll of two dice")
@@ -25,6 +26,11 @@ Public Class Form1
     Private Sub ButtonFill_Click(sender As Object, e As EventArgs) Handles ButtonFill.Click
         Me.myDictionary.Clear()
         Me.RichTextBox1.Clear()
+
+        'TO-DO
+        '1- Create function for generate distribution of two die roll
+        '2- Add with a for each cicle in a dictionary
+        '3- for time reason we do this with hand
 
         Me.myDictionary.Add(2, 0.03)
         Me.myDictionary.Add(3, 0.06)
