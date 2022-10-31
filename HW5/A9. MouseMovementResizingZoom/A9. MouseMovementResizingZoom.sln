@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "A9. MouseMovementResizingZoom", "A9. MouseMovementResizingZoom.vbproj", "{BEAA24E9-D808-4965-998F-72C7D3656727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEAA24E9-D808-4965-998F-72C7D3656727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEAA24E9-D808-4965-998F-72C7D3656727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEAA24E9-D808-4965-998F-72C7D3656727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEAA24E9-D808-4965-998F-72C7D3656727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEDF8EAA-170A-4174-99EE-3C7AC75B478A}
+	EndGlobalSection
+EndGlobal
