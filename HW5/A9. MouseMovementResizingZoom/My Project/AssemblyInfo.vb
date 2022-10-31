@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Controllare i valori degli attributi degli assembly
 
-<Assembly: AssemblyTitle("A9. MouseMovementResizingZoom")>
+<Assembly: AssemblyTitle("WindowsViewportTrasformation")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("A9. MouseMovementResizingZoom")>
+<Assembly: AssemblyProduct("WindowsViewportTrasformation")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'Se il progetto viene esposto a COM, il GUID seguente verrà usato come ID del typelib
-<Assembly: Guid("02219894-ceec-41fa-a56d-5db72c1692fb")>
+<Assembly: Guid("f3ecd7fc-0cec-4532-93ef-2fb05fee6cdc")>
 
 ' Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
 '

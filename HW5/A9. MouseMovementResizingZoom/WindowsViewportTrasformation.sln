@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "A9. MouseMovementResizingZoom", "A9. MouseMovementResizingZoom.vbproj", "{BEAA24E9-D808-4965-998F-72C7D3656727}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsViewportTrasformation", "WindowsViewportTrasformation.vbproj", "{01A86FB6-016F-4657-A61C-B4272762F393}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BEAA24E9-D808-4965-998F-72C7D3656727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEAA24E9-D808-4965-998F-72C7D3656727}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEAA24E9-D808-4965-998F-72C7D3656727}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEAA24E9-D808-4965-998F-72C7D3656727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A86FB6-016F-4657-A61C-B4272762F393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A86FB6-016F-4657-A61C-B4272762F393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A86FB6-016F-4657-A61C-B4272762F393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A86FB6-016F-4657-A61C-B4272762F393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FEDF8EAA-170A-4174-99EE-3C7AC75B478A}
+		SolutionGuid = {0C4D8951-B17D-4D8B-BE3D-3CF1B9485A57}
 	EndGlobalSection
 EndGlobal

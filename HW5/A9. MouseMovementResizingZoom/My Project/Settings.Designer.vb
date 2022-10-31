@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
 
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
-        Friend ReadOnly Property Settings() As Global.A9.MouseMovementResizingZoom.My.MySettings
+        Friend ReadOnly Property Settings() As Global.WindowsViewportTrasformation.My.MySettings
             Get
-                Return Global.A9.MouseMovementResizingZoom.My.MySettings.Default
+                Return Global.WindowsViewportTrasformation.My.MySettings.Default
             End Get
         End Property
     End Module

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BEAA24E9-D808-4965-998F-72C7D3656727}</ProjectGuid>
+    <ProjectGuid>{01A86FB6-016F-4657-A61C-B4272762F393}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>A9.MouseMovementResizingZoom.My.MyApplication</StartupObject>
-    <RootNamespace>A9.MouseMovementResizingZoom</RootNamespace>
-    <AssemblyName>A9.MouseMovementResizingZoom</AssemblyName>
+    <StartupObject>WindowsViewportTrasformation.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsViewportTrasformation</RootNamespace>
+    <AssemblyName>WindowsViewportTrasformation</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>A9.MouseMovementResizingZoom.xml</DocumentationFile>
+    <DocumentationFile>WindowsViewportTrasformation.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>A9.MouseMovementResizingZoom.xml</DocumentationFile>
+    <DocumentationFile>WindowsViewportTrasformation.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataPoint.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +98,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
