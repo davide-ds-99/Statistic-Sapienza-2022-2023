@@ -44,6 +44,9 @@ Partial Class Form1
         '
         'Chart
         '
+        Me.Chart.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ChartArea1.Name = "ChartArea1"
         Me.Chart.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
@@ -54,7 +57,7 @@ Partial Class Form1
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.Chart.Series.Add(Series1)
-        Me.Chart.Size = New System.Drawing.Size(489, 366)
+        Me.Chart.Size = New System.Drawing.Size(757, 526)
         Me.Chart.TabIndex = 8
         Me.Chart.Text = "Chart1"
         '
@@ -88,7 +91,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(781, 610)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBoxLambda)

@@ -1,8 +1,8 @@
 ﻿Imports System.Windows.Forms.DataVisualization.Charting
 
 Public Class Form1
-    Dim n = 100
-    Dim coin As New List(Of String)({"T", "C"})
+    Dim n = 12
+    'Dim coin As New List(Of String)({"T", "C"})
 
     Function CheckLimit()
         If String.IsNullOrEmpty(TextBoxLambda.Text) Then
@@ -11,39 +11,38 @@ Public Class Form1
         End If
         Return True
     End Function
+    Function Factorial(n As Integer) As Integer
+        If n <= 1 Then
+            Return 1
+        End If
+        Return Factorial(n - 1) * n
+    End Function
     Private Sub ButtonIteration_Click(sender As Object, e As EventArgs) Handles ButtonIteration.Click
         Chart.Titles.Clear()
         Chart.Series.Clear()
         If CheckLimit() Then
             Try
                 'CHART
-                Chart.Titles.Add("@TO-DO")
+                Chart.Titles.Add("Discrete distribution function")
                 Dim s As New Series
-                s.Name = "@TO-DO"
-                'Change to a line graph.
-                s.ChartType = SeriesChartType.Column
-
                 Dim lambda = CInt(TextBoxLambda.Text)
-
-                Dim dictionary = New Dictionary(Of String, Integer)
-                For Each side In coin
-                    dictionary.Add(side, 0)
+                Dim p = lambda / 100
+                Dim q As Double = 1 - p
+                Console.WriteLine(p & " " & q)
+                s.Name = "p= " & p & " n= " & n
+                'Change to a line graph.
+                s.ChartType = SeriesChartType.Point
+                For k As Integer = 0 To n
+                    Dim factorial_n = Factorial(n)
+                    Console.WriteLine(factorial_n)
+                    Dim factorial_k = Factorial(k) * Factorial(n - k)
+                    Console.WriteLine(factorial_k)
+                    Dim fraction_fact_n_fact_k As Double = factorial_n / factorial_k
+                    Dim value = fraction_fact_n_fact_k * Math.Pow(p, k) * Math.Pow(q, n - k)
+                    Console.WriteLine(value)
+                    s.Points.AddXY(k, value)
                 Next
-                Dim random As New Random
-                Dim temp_random As Integer
-
-                For index As Integer = 0 To n - 1
-                    temp_random = random.Next(1, 101)
-                    Console.WriteLine(temp_random)
-                    If temp_random >= lambda Then
-                        dictionary(coin(0)) += 1
-                    Else
-                        dictionary(coin(1)) += 1
-                    End If
-                Next
-                Console.WriteLine("############")
-                Console.WriteLine(dictionary(coin(0)))
-                Console.WriteLine(dictionary(coin(1)))
+                Chart.Series.Add(s)
             Catch ex As Exception
                 MsgBox("Insert an Integer and not anymore")
             End Try

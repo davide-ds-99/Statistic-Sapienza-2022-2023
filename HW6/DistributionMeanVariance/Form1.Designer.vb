@@ -38,26 +38,29 @@ Partial Class Form1
         '
         Me.ButtonMeanVariance.Location = New System.Drawing.Point(349, 12)
         Me.ButtonMeanVariance.Name = "ButtonMeanVariance"
-        Me.ButtonMeanVariance.Size = New System.Drawing.Size(152, 63)
+        Me.ButtonMeanVariance.Size = New System.Drawing.Size(149, 63)
         Me.ButtonMeanVariance.TabIndex = 0
         Me.ButtonMeanVariance.Text = "MEAN AND VARIANCE"
         Me.ButtonMeanVariance.UseVisualStyleBackColor = True
         '
         'ButtonClose
         '
-        Me.ButtonClose.Location = New System.Drawing.Point(863, 526)
+        Me.ButtonClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonClose.Location = New System.Drawing.Point(822, 658)
         Me.ButtonClose.Name = "ButtonClose"
-        Me.ButtonClose.Size = New System.Drawing.Size(152, 63)
+        Me.ButtonClose.Size = New System.Drawing.Size(149, 63)
         Me.ButtonClose.TabIndex = 2
         Me.ButtonClose.Text = "CLOSE"
         Me.ButtonClose.UseVisualStyleBackColor = True
         '
         'RichTextBoxM_V
         '
+        Me.RichTextBoxM_V.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RichTextBoxM_V.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxM_V.Location = New System.Drawing.Point(507, 12)
         Me.RichTextBoxM_V.Name = "RichTextBoxM_V"
-        Me.RichTextBoxM_V.Size = New System.Drawing.Size(340, 63)
+        Me.RichTextBoxM_V.Size = New System.Drawing.Size(294, 63)
         Me.RichTextBoxM_V.TabIndex = 3
         Me.RichTextBoxM_V.Text = ""
         '
@@ -65,11 +68,14 @@ Partial Class Form1
         '
         Me.TextBoxN.Location = New System.Drawing.Point(121, 32)
         Me.TextBoxN.Name = "TextBoxN"
-        Me.TextBoxN.Size = New System.Drawing.Size(94, 22)
+        Me.TextBoxN.Size = New System.Drawing.Size(91, 22)
         Me.TextBoxN.TabIndex = 5
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(142, 12)
         Me.Label1.Name = "Label1"
@@ -79,6 +85,9 @@ Partial Class Form1
         '
         'ChartMean
         '
+        Me.ChartMean.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ChartArea1.Name = "ChartArea1"
         Me.ChartMean.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
@@ -89,7 +98,7 @@ Partial Class Form1
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.ChartMean.Series.Add(Series1)
-        Me.ChartMean.Size = New System.Drawing.Size(835, 508)
+        Me.ChartMean.Size = New System.Drawing.Size(789, 639)
         Me.ChartMean.TabIndex = 7
         Me.ChartMean.Text = "Chart1"
         '
@@ -97,7 +106,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1039, 601)
+        Me.ClientSize = New System.Drawing.Size(993, 732)
         Me.Controls.Add(Me.ChartMean)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBoxN)
