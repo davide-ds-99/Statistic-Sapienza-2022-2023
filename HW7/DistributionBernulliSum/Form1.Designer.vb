@@ -30,6 +30,7 @@ Partial Class Form1
         Me.TextBoxLambda = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ButtonClose = New System.Windows.Forms.Button()
         CType(Me.Chart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,11 +88,21 @@ Partial Class Form1
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "LAMBDA"
         '
+        'ButtonClose
+        '
+        Me.ButtonClose.Location = New System.Drawing.Point(651, 9)
+        Me.ButtonClose.Name = "ButtonClose"
+        Me.ButtonClose.Size = New System.Drawing.Size(118, 54)
+        Me.ButtonClose.TabIndex = 12
+        Me.ButtonClose.Text = "CLOSE"
+        Me.ButtonClose.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(781, 610)
+        Me.Controls.Add(Me.ButtonClose)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBoxLambda)
@@ -110,4 +121,5 @@ Partial Class Form1
     Friend WithEvents TextBoxLambda As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents ButtonClose As Button
 End Class

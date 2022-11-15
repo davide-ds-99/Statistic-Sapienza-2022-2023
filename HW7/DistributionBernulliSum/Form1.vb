@@ -48,4 +48,9 @@ Public Class Form1
             End Try
         End If
     End Sub
+
+    Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
+        Close()
+
+    End Sub
 End Class
