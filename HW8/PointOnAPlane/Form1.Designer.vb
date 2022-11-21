@@ -22,15 +22,15 @@ Partial Class Form1
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonClose = New System.Windows.Forms.Button()
@@ -50,17 +50,17 @@ Partial Class Form1
         Me.Chart.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.Chart.Legends.Add(Legend4)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart.Legends.Add(Legend1)
         Me.Chart.Location = New System.Drawing.Point(43, 96)
         Me.Chart.Name = "Chart"
-        Series4.ChartArea = "ChartArea1"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Me.Chart.Series.Add(Series4)
-        Me.Chart.Size = New System.Drawing.Size(606, 525)
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart.Series.Add(Series1)
+        Me.Chart.Size = New System.Drawing.Size(673, 578)
         Me.Chart.TabIndex = 1
         Me.Chart.Text = "Chart1"
         '
@@ -76,7 +76,7 @@ Partial Class Form1
         'ButtonClose
         '
         Me.ButtonClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonClose.Location = New System.Drawing.Point(1048, 578)
+        Me.ButtonClose.Location = New System.Drawing.Point(1115, 631)
         Me.ButtonClose.Name = "ButtonClose"
         Me.ButtonClose.Size = New System.Drawing.Size(89, 43)
         Me.ButtonClose.TabIndex = 3
@@ -85,40 +85,43 @@ Partial Class Form1
         '
         'ChartX
         '
-        ChartArea5.Name = "ChartArea1"
-        Me.ChartX.ChartAreas.Add(ChartArea5)
-        Legend5.Name = "Legend1"
-        Me.ChartX.Legends.Add(Legend5)
-        Me.ChartX.Location = New System.Drawing.Point(674, 42)
+        Me.ChartX.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        ChartArea2.Name = "ChartArea1"
+        Me.ChartX.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.ChartX.Legends.Add(Legend2)
+        Me.ChartX.Location = New System.Drawing.Point(741, 42)
         Me.ChartX.Name = "ChartX"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Me.ChartX.Series.Add(Series5)
-        Me.ChartX.Size = New System.Drawing.Size(368, 260)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.ChartX.Series.Add(Series2)
+        Me.ChartX.Size = New System.Drawing.Size(463, 260)
         Me.ChartX.TabIndex = 4
         Me.ChartX.Text = "ChartX"
         '
         'ChartY
         '
-        ChartArea6.Name = "ChartArea1"
-        Me.ChartY.ChartAreas.Add(ChartArea6)
-        Legend6.Name = "Legend1"
-        Me.ChartY.Legends.Add(Legend6)
-        Me.ChartY.Location = New System.Drawing.Point(674, 339)
+        Me.ChartY.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        ChartArea3.Name = "ChartArea1"
+        Me.ChartY.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.ChartY.Legends.Add(Legend3)
+        Me.ChartY.Location = New System.Drawing.Point(741, 339)
         Me.ChartY.Name = "ChartY"
-        Series6.ChartArea = "ChartArea1"
-        Series6.Legend = "Legend1"
-        Series6.Name = "Series1"
-        Me.ChartY.Series.Add(Series6)
-        Me.ChartY.Size = New System.Drawing.Size(368, 282)
+        Series3.ChartArea = "ChartArea1"
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Me.ChartY.Series.Add(Series3)
+        Me.ChartY.Size = New System.Drawing.Size(463, 282)
         Me.ChartY.TabIndex = 5
         Me.ChartY.Text = "Chart2"
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(671, 22)
+        Me.Label1.Location = New System.Drawing.Point(733, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(192, 17)
         Me.Label1.TabIndex = 6
@@ -126,8 +129,9 @@ Partial Class Form1
         '
         'Label2
         '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(671, 319)
+        Me.Label2.Location = New System.Drawing.Point(739, 319)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(192, 17)
         Me.Label2.TabIndex = 7
@@ -154,7 +158,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1149, 644)
+        Me.ClientSize = New System.Drawing.Size(1216, 697)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBoxN)
         Me.Controls.Add(Me.Label2)

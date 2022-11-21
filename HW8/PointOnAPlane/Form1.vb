@@ -1,14 +1,14 @@
 ﻿Imports System.Windows.Forms.DataVisualization.Charting
 
 Public Class Form1
-    Dim ArrayX As New List(Of Double)
-    Dim ArrayY As New List(Of Double)
     Dim n As New Integer
+    Dim dictionaryX As New Dictionary(Of Double, Integer)
+    Dim dictionaryY As New Dictionary(Of Double, Integer)
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Chart.Titles.Clear()
         Chart.Series.Clear()
-        ArrayX.Clear()
-        ArrayY.Clear()
+        dictionaryX.Clear()
+        dictionaryY.Clear()
 
         'CHART
         Chart.Titles.Add("Points in a Cartesian Plane")
@@ -30,37 +30,44 @@ Public Class Form1
                 Console.WriteLine("R = " & r)
                 Dim tetha As Double = 2 * Math.PI * u2
                 Console.WriteLine("Tetha = " & tetha)
-                Dim X As Double = r * Math.Cos(tetha)
-                Dim Y As Double = r * Math.Sin(tetha)
+                Dim X As Double = Math.Round(r * Math.Cos(tetha), 2)
+                Dim Y As Double = Math.Round(r * Math.Sin(tetha), 2)
                 Console.WriteLine("X = " & X & " Y = " & Y)
-                ArrayX.Add(X)
-                ArrayY.Add(Y)
+                aggItem(X, dictionaryX)
+                aggItem(Y, dictionaryY)
                 s.Points.AddXY(X, Y)
             Next
             Chart.Series.Add(s)
-            drawEmpiricalDistribution(ArrayX, n, ChartX)
-            drawEmpiricalDistribution(ArrayY, n, ChartY)
+            empiricalDistribution(dictionaryX, ChartX)
+            empiricalDistribution(dictionaryY, ChartY)
         Catch
             MsgBox("Insert an Integer and not anymore")
 
         End Try
     End Sub
 
-    Private Sub drawEmpiricalDistribution(unorderedarray As List(Of Double), n As Integer, chart As Chart)
-        Dim ordered_array As List(Of Double) = unorderedarray
-        ordered_array.Sort()
-        chart.Titles.Clear()
-        chart.Series.Clear()
-        chart.Titles.Add("Empirical Distribution")
+    Private Sub aggItem(x As Double, dictionaryX As Dictionary(Of Double, Integer))
+        If dictionaryX.ContainsKey(x) Then
+            dictionaryX(x) += 1
+        Else
+            dictionaryX.Add(x, 1)
+        End If
+    End Sub
+
+    Private Sub empiricalDistribution(dizionario As Dictionary(Of Double, Integer), Chart As Chart)
+        Chart.Titles.Clear()
+        Chart.Series.Clear()
         Dim s As New Series
         s.ChartType = SeriesChartType.Column
-        s.MarkerSize = 5
-        s.MarkerColor = Color.Green
-        For item_index As Integer = 0 To n
-            Console.WriteLine(item_index, ordered_array(item_index))
-            s.Points.AddXY(item_index, ordered_array(item_index))
+        Dim query = From item In dizionario
+                    Order By item.Key Ascending
+                    Select item
+        For Each value As KeyValuePair(Of Double, Integer) In query
+            Console.WriteLine(value)
+            s.Points.AddXY(value.Key, value.Value)
         Next
-        chart.Series.Add(s)
+        Chart.Series.Add(s)
+
     End Sub
 
     Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
