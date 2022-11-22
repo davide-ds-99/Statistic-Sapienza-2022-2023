@@ -22,9 +22,9 @@ Partial Class Form1
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.ButtonGauss = New System.Windows.Forms.Button()
         Me.ButtonChiSquare = New System.Windows.Forms.Button()
         Me.ButtonStudent = New System.Windows.Forms.Button()
@@ -38,45 +38,45 @@ Partial Class Form1
         '
         Me.ButtonGauss.Location = New System.Drawing.Point(25, 23)
         Me.ButtonGauss.Name = "ButtonGauss"
-        Me.ButtonGauss.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonGauss.Size = New System.Drawing.Size(96, 62)
         Me.ButtonGauss.TabIndex = 0
-        Me.ButtonGauss.Text = "GAUSS"
+        Me.ButtonGauss.Text = "GAUSS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(X)"
         Me.ButtonGauss.UseVisualStyleBackColor = True
         '
         'ButtonChiSquare
         '
-        Me.ButtonChiSquare.Location = New System.Drawing.Point(106, 23)
+        Me.ButtonChiSquare.Location = New System.Drawing.Point(136, 23)
         Me.ButtonChiSquare.Name = "ButtonChiSquare"
-        Me.ButtonChiSquare.Size = New System.Drawing.Size(122, 23)
+        Me.ButtonChiSquare.Size = New System.Drawing.Size(101, 62)
         Me.ButtonChiSquare.TabIndex = 1
-        Me.ButtonChiSquare.Text = "CHI SQUARE"
+        Me.ButtonChiSquare.Text = "CHI SQUARE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(X^2)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.ButtonChiSquare.UseVisualStyleBackColor = True
         '
         'ButtonStudent
         '
-        Me.ButtonStudent.Location = New System.Drawing.Point(234, 23)
+        Me.ButtonStudent.Location = New System.Drawing.Point(253, 23)
         Me.ButtonStudent.Name = "ButtonStudent"
-        Me.ButtonStudent.Size = New System.Drawing.Size(122, 23)
+        Me.ButtonStudent.Size = New System.Drawing.Size(108, 62)
         Me.ButtonStudent.TabIndex = 2
-        Me.ButtonStudent.Text = "CHI STUDENT"
+        Me.ButtonStudent.Text = "CHI STUDENT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(X/Y^2)"
         Me.ButtonStudent.UseVisualStyleBackColor = True
         '
         'ButtonFisher
         '
-        Me.ButtonFisher.Location = New System.Drawing.Point(362, 23)
+        Me.ButtonFisher.Location = New System.Drawing.Point(377, 23)
         Me.ButtonFisher.Name = "ButtonFisher"
-        Me.ButtonFisher.Size = New System.Drawing.Size(122, 23)
+        Me.ButtonFisher.Size = New System.Drawing.Size(109, 62)
         Me.ButtonFisher.TabIndex = 3
-        Me.ButtonFisher.Text = "FISHER F"
+        Me.ButtonFisher.Text = "FISHER F" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(X^2/Y^2)"
         Me.ButtonFisher.UseVisualStyleBackColor = True
         '
         'ButtonCauchy
         '
-        Me.ButtonCauchy.Location = New System.Drawing.Point(490, 23)
+        Me.ButtonCauchy.Location = New System.Drawing.Point(504, 23)
         Me.ButtonCauchy.Name = "ButtonCauchy"
-        Me.ButtonCauchy.Size = New System.Drawing.Size(122, 23)
+        Me.ButtonCauchy.Size = New System.Drawing.Size(105, 62)
         Me.ButtonCauchy.TabIndex = 4
-        Me.ButtonCauchy.Text = "CAUCHY"
+        Me.ButtonCauchy.Text = "CAUCHY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(X/Y)"
         Me.ButtonCauchy.UseVisualStyleBackColor = True
         '
         'Chart
@@ -84,17 +84,17 @@ Partial Class Form1
         Me.Chart.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        ChartArea5.Name = "ChartArea1"
-        Me.Chart.ChartAreas.Add(ChartArea5)
-        Legend5.Name = "Legend1"
-        Me.Chart.Legends.Add(Legend5)
-        Me.Chart.Location = New System.Drawing.Point(25, 52)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart.Legends.Add(Legend1)
+        Me.Chart.Location = New System.Drawing.Point(25, 91)
         Me.Chart.Name = "Chart"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Me.Chart.Series.Add(Series5)
-        Me.Chart.Size = New System.Drawing.Size(584, 562)
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart.Series.Add(Series1)
+        Me.Chart.Size = New System.Drawing.Size(584, 523)
         Me.Chart.TabIndex = 5
         Me.Chart.Text = "Chart1"
         '
