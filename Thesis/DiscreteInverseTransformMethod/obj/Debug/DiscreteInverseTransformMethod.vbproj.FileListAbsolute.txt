@@ -1,0 +1,15 @@
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.vbproj.AssemblyReference.cache
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.Form1.resources
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.Resources.resources
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.vbproj.GenerateResource.cache
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.vbproj.CoreCompileInputs.cache
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\bin\Debug\DiscreteInverseTransformMethod.exe.config
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\bin\Debug\DiscreteInverseTransformMethod.exe
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\bin\Debug\DiscreteInverseTransformMethod.pdb
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\bin\Debug\DiscreteInverseTransformMethod.xml
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.vbproj.CopyComplete
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.exe
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.xml
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\DiscreteInverseTransformMethod\obj\Debug\DiscreteInverseTransformMethod.pdb

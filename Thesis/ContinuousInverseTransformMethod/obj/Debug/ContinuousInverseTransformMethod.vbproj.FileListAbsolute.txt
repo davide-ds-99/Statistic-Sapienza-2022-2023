@@ -1,0 +1,15 @@
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\bin\Debug\ContinuousInverseTransformMethod.exe.config
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\bin\Debug\ContinuousInverseTransformMethod.exe
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\bin\Debug\ContinuousInverseTransformMethod.pdb
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\bin\Debug\ContinuousInverseTransformMethod.xml
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.vbproj.AssemblyReference.cache
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.Form1.resources
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.Resources.resources
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.vbproj.GenerateResource.cache
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.vbproj.CoreCompileInputs.cache
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.vbproj.CopyComplete
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.exe
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.xml
+C:\Users\EJ033T\Desktop\Davide\MAGISTRALE\PRIMO ANNO\Statistics\Tesi\Code\ContinuousInverseTransformMethod\obj\Debug\ContinuousInverseTransformMethod.pdb

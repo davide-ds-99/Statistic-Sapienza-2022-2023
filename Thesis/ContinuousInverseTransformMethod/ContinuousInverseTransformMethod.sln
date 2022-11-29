@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ContinuousInverseTransformMethod", "ContinuousInverseTransformMethod.vbproj", "{57EB2AB2-ECAA-47A0-9EF2-49238FBE15AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57EB2AB2-ECAA-47A0-9EF2-49238FBE15AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EB2AB2-ECAA-47A0-9EF2-49238FBE15AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EB2AB2-ECAA-47A0-9EF2-49238FBE15AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EB2AB2-ECAA-47A0-9EF2-49238FBE15AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB868C99-9837-4249-82C2-72E7D840F4D8}
+	EndGlobalSection
+EndGlobal
