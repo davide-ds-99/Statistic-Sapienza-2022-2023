@@ -32,11 +32,21 @@ Public Class Form1
     End Sub
 
     Private Sub Button100_Click(sender As Object, e As EventArgs) Handles Button100.Click
-        'Use a Windows Package for generate chart
+        Discrete(100)
+    End Sub
+
+    Private Sub Button500_Click(sender As Object, e As EventArgs) Handles Button500.Click
+        Discrete(500)
+    End Sub
+    Private Sub Button1000_Click(sender As Object, e As EventArgs) Handles Button1000.Click
+        Discrete(1000)
+    End Sub
+
+    Private Sub Discrete(iteration As Integer)
         Chart1.Titles.Clear()
         Chart1.Series.Clear()
         DistributionDictionary.Clear()
-        Chart1.Titles.Add("Distribution of the sum of roll of two dice")
+        Chart1.Titles.Add("Discrete Inverse Trasform Method")
         'Create a new series and add data points to it.
         Dim s As New Series
         s.Name = "sum of distribution"
@@ -53,7 +63,7 @@ Public Class Form1
 
         Console.WriteLine("LEN " & Len(myDictionary.Count))
 
-        For n = 1 To 100
+        For n = 1 To iteration
             Dim U = Rnd()
             If U <= myDictionary(1) Then
                 DistributionDictionary(1) += 1
@@ -73,12 +83,8 @@ Public Class Form1
             Console.WriteLine("Chiave " & key.Key & " Valore" & key.Value)
             s.Points.AddXY(key.Key, key.Value)
         Next
-
-
-        'For Each element As KeyValuePair(Of Integer, Double) In myDictionary
-        '    s.Points.AddXY(element.Key.ToString, element.Value)
-        'Next
-        'Add the series to the Chart1 control.
         Chart1.Series.Add(s)
     End Sub
+
+
 End Class

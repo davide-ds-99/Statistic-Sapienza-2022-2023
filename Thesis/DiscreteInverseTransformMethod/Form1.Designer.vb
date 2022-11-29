@@ -22,9 +22,9 @@ Partial Class Form1
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.ButtonClear = New System.Windows.Forms.Button()
         Me.ButtonClose = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
@@ -32,8 +32,8 @@ Partial Class Form1
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button100 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button500 = New System.Windows.Forms.Button()
+        Me.Button1000 = New System.Windows.Forms.Button()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,16 +74,16 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(228, 77)
         Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.Chart1.Series.Add(Series2)
         Me.Chart1.Size = New System.Drawing.Size(742, 381)
         Me.Chart1.TabIndex = 6
         '
@@ -107,31 +107,31 @@ Partial Class Form1
         Me.Button100.Text = "n=100"
         Me.Button100.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Button500
         '
-        Me.Button1.Location = New System.Drawing.Point(310, 464)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 37)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "n=500"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button500.Location = New System.Drawing.Point(310, 464)
+        Me.Button500.Name = "Button500"
+        Me.Button500.Size = New System.Drawing.Size(75, 37)
+        Me.Button500.TabIndex = 9
+        Me.Button500.Text = "n=500"
+        Me.Button500.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Button1000
         '
-        Me.Button2.Location = New System.Drawing.Point(391, 464)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 37)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "n=1000"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button1000.Location = New System.Drawing.Point(391, 464)
+        Me.Button1000.Name = "Button1000"
+        Me.Button1000.Size = New System.Drawing.Size(75, 37)
+        Me.Button1000.TabIndex = 10
+        Me.Button1000.Text = "n=1000"
+        Me.Button1000.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(995, 597)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button1000)
+        Me.Controls.Add(Me.Button500)
         Me.Controls.Add(Me.Button100)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Chart1)
@@ -153,6 +153,6 @@ Partial Class Form1
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents Label1 As Label
     Friend WithEvents Button100 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button500 As Button
+    Friend WithEvents Button1000 As Button
 End Class
